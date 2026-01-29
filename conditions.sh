@@ -2,7 +2,7 @@
 NUM=$1
 SUM=$(($NUM/2))
 
-if [ $SUM == 0 ]; then
+if [ $SUM -eq 0 ]; then
 
 echo "given number is even"
 
