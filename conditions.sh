@@ -1,6 +1,6 @@
 #!/bin/bash
 NUM=$1
-SUM=$(($NUM/2))
+SUM=$(($NUM%2))
 
 if [ $SUM -eq 0 ]; then
 
