@@ -14,8 +14,8 @@ if [ -z "$FILES_TO_DELETE" ]; then
     echo " No files to delete"
 else
     while IFS= read -r logfiles; do
-    echo "deleting files : "$logfiles" " &>>$LOGS_FILE
+    echo "deleting files : "$logfiles" " 
     rm -f "$logfiles" &>>$LOGS_FILE
-    echo "files deleted "$logfiles" " &>>$LOGS_FILE
+    echo "files deleted "$logfiles" "
     done <<< "$FILES_TO_DELETE"
 fi
